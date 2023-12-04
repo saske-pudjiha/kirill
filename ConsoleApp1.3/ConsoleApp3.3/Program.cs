@@ -17,7 +17,7 @@ public class Program
             for (int i = array.Length - 1; i >= 0; i--)
             {
                 int perevorot = Convert.ToInt32(array[i]);
-                int min = perevorot; // Initialize min with the current value
+                int min = perevorot; 
 
                 int volum = 0;
 
@@ -25,7 +25,7 @@ public class Program
                 {
                     int perevorot2 = Convert.ToInt32(array[j]);
 
-                    if (perevorot < perevorot2) // Compare the current value with the one at index j
+                    if (perevorot < perevorot2) 
                     {
                         min = perevorot;
                     }
