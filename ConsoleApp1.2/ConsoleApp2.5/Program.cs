@@ -9,7 +9,7 @@ namespace Program
             var temperature = new Dictionary<string, int[]>();
 
             int minTemp = -30;
-            int maxTemp = -9;
+            int maxTemp = 20;
             Random random = new Random();
             string[] months = {"January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"};
 
@@ -31,48 +31,24 @@ namespace Program
                 int average = 0;
                 foreach (var VARIABLE in temperature.GetValueOrDefault(month))
                 {
-                    
-                }
-            }
-            
-            /*
-            static int[] avgTemp(int[,] temperature)
-            {
-                int[] avgTemps = new int[12];
-                int sum = 0;
-
-                for (int i = 0; i < 12; i++)
-                {
-                    sum = 0;
-                    for (int j = 0; j < 30; j++)
-                    {
-                        sum += temperature[i, j];
-                    }
-
-                    avgTemps[i] = sum / 30;
+                    average += VARIABLE;
                 }
 
-                return avgTemps;
+                average /= 30;
+                
+                avgTemperature.Add(month, average);
             }
 
-            int[] avgTemps = avgTemp(temperature); 
+            int aY = 0;
             
-            Sort(ref avgTemps);
-            
-            for (int i = 0; i < 12; i++)
+            Console.WriteLine("-------------------------------------------");
+            foreach (var month in months)
             {
-                Console.WriteLine(avgTemps[i] + " ");
-            }*/
+                Console.WriteLine($"{month} {avgTemperature.GetValueOrDefault(month)}");
+                aY += avgTemperature.GetValueOrDefault(month);
+            }
             
+            Console.WriteLine(aY / 12);
         }
-        
-        public static void Sort(ref int[] avgTemps)
-        {
-            Array.Sort(avgTemps);
-        }
-        
     }
 }
-        
-
-
