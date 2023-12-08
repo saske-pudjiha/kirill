@@ -8,23 +8,19 @@
     "net7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\gr622_gokse\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\user\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\gr622_gokse\\Desktop\\kirill\\ConsoleApp1.3\\ConsoleApp3.2\\ConsoleApp3.2.csproj",
+      "projectUniqueName": "C:\\Users\\user\\Desktop\\kirill\\ConsoleApp1.3\\ConsoleApp3.2\\ConsoleApp3.2.csproj",
       "projectName": "ConsoleApp3.2",
-      "projectPath": "C:\\Users\\gr622_gokse\\Desktop\\kirill\\ConsoleApp1.3\\ConsoleApp3.2\\ConsoleApp3.2.csproj",
-      "packagesPath": "C:\\Users\\gr622_gokse\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\gr622_gokse\\Desktop\\kirill\\ConsoleApp1.3\\ConsoleApp3.2\\obj\\",
+      "projectPath": "C:\\Users\\user\\Desktop\\kirill\\ConsoleApp1.3\\ConsoleApp3.2\\ConsoleApp3.2.csproj",
+      "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\user\\Desktop\\kirill\\ConsoleApp1.3\\ConsoleApp3.2\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\gr622_gokse\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
@@ -63,7 +59,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Users\\user\\.dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
       }
     }
   }
