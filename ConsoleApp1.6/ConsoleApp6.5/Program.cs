@@ -12,7 +12,6 @@ class Program
 
         int[,] matrix = new int[n, m];
 
-        // Ввод матрицы
         for (int i = 0; i < n; i++)
         {
             Console.WriteLine($"Введите элементы {i + 1}-й строки, разделенные пробелом: ");
@@ -23,7 +22,6 @@ class Program
                 matrix[i, j] = int.Parse(input[j]);
             }
         }
-        // Создание новой матрицы
         int[,] newMatrix = new int[n, m + 1];
         for (int i = 0; i < n; i++)
         {
@@ -37,7 +35,6 @@ class Program
 
             newMatrix[i, m] = count % 2;
         }
-        // Вывод новой матрицы
         Console.WriteLine("Новая матрица:");
 
         for (int i = 0; i < n; i++)

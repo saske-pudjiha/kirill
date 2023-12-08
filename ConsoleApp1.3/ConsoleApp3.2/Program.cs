@@ -1,31 +1,54 @@
 ﻿using System;
-using System.IO;
 
-
-namespace Program2
+namespace App1
 {
-    class Program2
+    class Program
     {
-        public static void Main()
+        static void Main()
         {
-            string  input = @"C:\Users\gr622_gokse\Desktop\kirill\ConsoleApp1.3\ConsoleApp3.2\nums.txt";
-            
-            string[] pathInput = File.ReadAllLines(input);
-            
-            File.WriteAllText(input, string.Empty);
-            
-            string write = String.Empty;
+            String[] array = new String[10000];
+            Console.WriteLine("Введите число: ");
+            String input = " ";
+            int count = 0;
 
-            foreach (string elem in pathInput[0].Split(" "))
+            do
             {
-                if (elem != "" && int.Parse(elem)% 2 != 0)
+                input = Console.ReadLine();
+                if (input == "")
                 {
-                    write += elem + " ";
-                    
+                    break;
                 }
+                array[count] = input;
+                count++;
                 
+            } while (true);
+        
+            if (array.Length > 0)
+            {
+                String shortest = array[0];
+                String longtest = array[0];
+
+                foreach (String element in array)
+                {
+                    if (element == null)
+                    {
+                        break;
+                    }
+                    
+                    if (element.Length < shortest.Length)
+                        shortest = element;
+
+                    if (element.Length > longtest.Length)
+                        longtest = element;
+                }
+
+                Console.WriteLine("Самый короткий элемент: " + shortest);
+                Console.WriteLine("Самый длинный элемент: " + longtest);
             }
-            File.WriteAllText(input, write);
+            else
+            {
+                Console.WriteLine("Список пуст");
+            }
         }
     }
 }
